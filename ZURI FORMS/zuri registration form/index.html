@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuri Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d48a9a8490.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <!-- <button class="toggle-btn" type="button">Login</button> -->
+          <button class="toggle-btn" type="button">Register</button>
+        </div>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google"></i> <br />
+          <small
+            >Already have an Account? <br /><a
+              href="/zuri login form/index.html"
+              >Sign in
+            </a></small
+          >
+        </div>
+
+        <form
+          action="/popup zuri/success.html"
+          class="input-group"
+          id="register"
+        >
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Firstname"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Lastname"
+            required
+          />
+          <input
+            type="number"
+            class="input-field"
+            placeholder="Phone number"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Create Password"
+            required
+          />
+
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="Male" class="label">Male</label>
+
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="female" class="label">Female</label>
+
+          <input type="radio" name="gender" value="others" id="female" />
+          <label for="Others" class="label">Others</label> <br />
+
+          <label for="birthday" class="label">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" /> <br />
+          <label for="favcolor" class="label"
+            >Select your favorite color:</label
+          >
+          <input type="color" id="favcolor" name="favcolor" value="favcolor" />
+          <br />
+          <input type="checkbox" class="check-box" />
+          <span>I agree to the <a href="">Terms & Conditions</a></span> <br />
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

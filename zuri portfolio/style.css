@@ -1,0 +1,392 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #023047),
+    url(images/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#home .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(159, 158, 163, 0.5);
+  z-index: 2;
+  margin-top: -20px;
+  opacity: 0.2px;
+}
+
+.logo {
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.logo img {
+  width: 80px;
+  object-fit: cover;
+}
+
+.nav-bar ul {
+  margin-right: 10%;
+  margin-top: 2%;
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 35px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.nav-bar ul li a:hover {
+  background-color: #023047;
+  color: #ebebeb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#article {
+  margin-top: 15%;
+  margin-left: 10%;
+  color: #ebebee;
+}
+
+#article h1 {
+  font-size: 70px;
+  font-weight: 800;
+  font-family: "Kaushan Script", cursive;
+}
+
+#article span {
+  color: #e63946;
+  font-size: 80px;
+}
+
+#article p {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Kaushan Script", cursive;
+}
+
+/*--- about ---*/
+
+main {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.profile-details {
+  margin-top: -60px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pic {
+  border: 2px solid #fff;
+  padding: 30px 12px;
+  border-style: dotted;
+  border-radius: 10px;
+  background-color: #ebebeb;
+  margin-top: -30px;
+  margin-right: 25px;
+}
+
+.profile-pic img {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  /* margin-top: -60px; */
+}
+
+#about {
+  margin-top: -70px;
+}
+
+#about h1 {
+  padding-top: 20px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 800;
+  color: #333;
+}
+
+#about p {
+  padding-top: 10px;
+  width: 800px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #023047;
+}
+
+/* ----------projects ------*/
+
+#project {
+  position: relative;
+  overflow: hidden;
+  margin-top: 5%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #ebebee;
+  padding: 60px 0px;
+  opacity: 0px;
+}
+#project h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #333;
+  padding: 10px;
+}
+
+#project .project-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#project .project-section img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#project .project-section img:hover {
+  transform: translateY(-10px);
+}
+#project .project-section .recent-project {
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#project .project-section .recent-project h1 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #023047;
+  transition: 0.5s;
+}
+
+#project .project-section .recent-project p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #023047;
+  font-style: italic;
+}
+
+/*------- services ------*/
+.service-heading {
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.service-heading h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #333;
+}
+
+#service {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#service .service-box {
+  width: 380px;
+  height: 250px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #023047;
+  padding: 30px;
+  color: #fff;
+  font-family: poppins;
+  text-align: left;
+  transition: 0.5s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#service .service-box i {
+  font-size: 40px;
+  padding-top: 50px;
+  transition: 0.5s;
+}
+
+#service .service-box h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+#service .service-box:hover {
+  background-color: #ebebee;
+  color: #023047;
+}
+
+#service .service-box i:hover {
+  transform: translateY(-10px);
+}
+
+/* contact */
+
+#contact {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+}
+
+#contact h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  font-weight: 800;
+}
+
+#contact .contact-detail {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact .social-icons {
+  padding: 10px;
+}
+
+#contact .social-icons p i {
+  padding-right: 10px;
+}
+
+#contact .social-icons p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #023047;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#contact .social-icons a {
+  padding: 0px 10px;
+  font-size: 35px;
+  color: #023047;
+  transition: 0.5s;
+}
+#contact .social-icons a i {
+  transition: 0.5s;
+}
+
+#contact .social-icons a i:hover {
+  transform: translate(-5px);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0px;
+  outline: none;
+  background: #ebebeb;
+  padding: 15px;
+  margin: 15px 0;
+  color: #023047;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.contact-detail button {
+  padding: 14px 30px;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  color: #ebebeb;
+  background-color: #023047;
+  border: none;
+  transition: 0.5s;
+}
+
+.contact-detail button:hover {
+  color: #023047;
+  background-color: #ebebeb;
+  transform: translateX(8px);
+  font-weight: 600;
+}
+
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  color: #ebebeb;
+  background-color: #023047;
+  border: none;
+  transition: 0.5s;
+}
+
+form .btn2:hover {
+  color: #023047;
+  background-color: #ebebeb;
+  transform: translateX(8px);
+  font-weight: 600;
+}
+
+/* ----------copyright ------*/
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: black;
+  font-weight: 100;
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  /* height:20px ; */
+}
+
+.copyright p {
+  font-family: mada;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ebebeb;
+}
